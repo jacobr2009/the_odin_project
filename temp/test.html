@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let add7 = num => num + 7;
+
+    let multiply = (a, b) => a * b;
+
+    let capitalize = (string) => {
+      let lowerCaseString = string.toLowerCase();
+      let firstLetterUpperCase = lowerCaseString[0].toUpperCase();
+      return lowerCaseString.replace(lowerCaseString[0], firstLetterUpperCase);
+    }
+
+    let lastLetter = string => string[string.length - 1]
+
+    console.log(add7(4));
+    console.log(multiply(4, 7));
+    console.log(capitalize('what'));
+    console.log(capitalize('What'));
+    console.log(capitalize('WHAT'));
+    console.log(lastLetter('what'));
+
+  </script>
+</body>
+</html>
